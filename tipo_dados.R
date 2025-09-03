@@ -9,10 +9,10 @@ print(class(inteiro))
 print(is.numeric(inteiro))
 
 # Representa números reais (decimais ou inteiros, mas armazenados como double).
-ponto_flutuante <- 44.4
-print(ponto_flutuante)
-print(class(ponto_flutuante))
-print(is.numeric(ponto_flutuante))
+ponto.flutuante <- 44.4
+print(ponto.flutuante)
+print(class(ponto.flutuante))
+print(is.numeric(ponto.flutuante))
 
 # Textos, cadeias de caracteres entre aspas simples ou duplas.
 nomes <- "TESTE"
@@ -33,9 +33,9 @@ print(class(complexo))
 print(is.complex(complexo))
 
 # Dados brutos, usados para representar bytes.
-dado_bruto <- charToRaw("A")
-print(dado_bruto)
-print(class(dado_bruto))
+dado.bruto <- charToRaw("A")
+print(dado.bruto)
+print(class(dado.bruto))
 
 # Estruturas de dados (objetos compostos)
 # Além dos tipos atômicos, R organiza dados em estruturas:
