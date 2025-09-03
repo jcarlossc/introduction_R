@@ -43,15 +43,46 @@ cat("Tipo:", class(dado_bruto), "\n\n")
 # Conjunto de elementos do mesmo tipo.
 vetor <- c(1,2,3,4,5)
 cat("Vetor:", vetor, "\n")
-cat("É numérico? ", class(vetor), "\n\n")
+cat("É numérico?", class(vetor), "\n\n")
 
 # Usado para variáveis categóricas (ex.: níveis de um questionário).
 sexo <- factor(c("M", "F", "M", "F"))
 cat("Variáveis categóricas:", sexo, "\n")
-cat("É factor? ", class(sexo), "\n")
-cat("Níveis: ", levels(sexo), "\n\n")
+cat("É factor?", class(sexo), "\n")
+cat("Níveis:", levels(sexo), "\n\n")
 
+# Estrutura bidimensional, mas todos os elementos devem ser do mesmo tipo.
+matriz <- matrix(1:6, nrow=2, ncol=3)
+cat("Matriz:", matriz, "\n")
+cat("É matriz?", class(matriz), "\n\n")
 
+# Array(arranjo) Generalização da matriz para mais de duas dimensões.
+arranjo <- array(1:8, dim=c(2,2,2))
+cat("Array:", arranjo, "\n")
+cat("É array?", class(arranjo), "\n\n")
+
+# Lista: Estrutura heterogênea: pode conter diferentes tipos de dados.
+lista <- list(nome="Carlos", idade=48, notas=c(8,9,10))
+cat("É lista?", class(lista), "\n\n")
+
+# Tabela(dataframe) Estrutura tabular (colunas podem ser de tipos diferentes).
+df <- data.frame(
+    nome=c("Ana","Pedro"),
+    idade=c(23,30),
+    aprovado=c(TRUE,FALSE)
+)
+cat("É Tabela?", class(df), "\n\n")
+
+# Classes especiais
+# R também possui classes específicas derivadas dos tipos básicos:
+
+# Date: para datas.
+data <- as.Date("2025-09-02")
+cat("É data? ", class(data), "\n\n")
+
+# POSIXct / POSIXlt: para data e hora.
+data_hora <- as.POSIXct("2025-09-02 13:45:00")
+cat("É POSIXct? ", class(data_hora), "\n\n")
 
 
 
