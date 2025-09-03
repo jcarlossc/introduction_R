@@ -9,8 +9,10 @@
 
 # Ambiente virtual do renv
 renv/
-renv/library/
 renv/staging/
+renv/activate.R
+renv/library/
+renv.lock
 
 # Cache do pacote renv
 renv/.cache/
