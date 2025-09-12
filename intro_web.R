@@ -1,6 +1,6 @@
-# Manipulação de Arquivos Web em R
-# Ler arquivos diretamente de uma URL
+# MANIPULAÇÂO DE ARQUIVOS WEB R
 
+# Ler arquivos diretamente de uma URL
 # CSV direto da web
 url_csv <- "https://people.sc.fsu.edu/~jburkardt/data/csv/airtravel.csv"
 dados_csv <- read.csv(url_csv)
@@ -18,7 +18,7 @@ destino <- "dados_baixados.csv"
 
 download.file(url, destino, method = "auto")
 
-# Ler o arquivo baixado
+# Ler o arquivo baixado(poderá usar os tributos sep, dec, entre outros)
 dados <- read.csv(destino)
 head(dados)
 
