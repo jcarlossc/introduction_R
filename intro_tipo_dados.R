@@ -1,4 +1,5 @@
-# Tipos de dados da Linguagem R
+# TIPOS DE DADOS DA LINGUAGEM R
+
 # Tipos básicos (atomic types)
 # São os blocos fundamentais de dados em R:
 
@@ -14,7 +15,7 @@ print(ponto.flutuante)
 print(class(ponto.flutuante))
 print(is.numeric(ponto.flutuante))
 
-# Textos, cadeias de caracteres entre aspas simples ou duplas.
+# Textos - cadeias de caracteres entre aspas simples ou duplas.
 nomes <- "TESTE"
 print(nomes)
 print(class(nomes))
@@ -22,9 +23,13 @@ print(is.character(nomes))
 
 # Valores lógicos: TRUE ou FALSE (também podem ser abreviados como T e F).
 logico <- TRUE
+logico.abreviado <- F
 print(logico)
 print(class(logico))
 print(is.logical(logico))
+print(logico.abreviado)
+print(class(logico.abreviado))
+print(is.logical(logico.abreviado))
 
 # Números complexos (com parte real e imaginária).
 complexo <- 3 + 2i
@@ -37,21 +42,22 @@ dado.bruto <- charToRaw("A")
 print(dado.bruto)
 print(class(dado.bruto))
 
-# Estruturas de dados (objetos compostos)
+
+# TIPOS COMPOSTOS (Estrutura de dados)
 # Além dos tipos atômicos, R organiza dados em estruturas:
 
-# Conjunto de elementos do mesmo tipo.
+# Vetor - somente elementos do mesmo tipo.
 vetor <- c(1,2,3,4,5)
 print(vetor)
 print(class(vetor))
 
-# Usado para variáveis printegóricas (ex.: níveis de um questionário).
+# Fator - Usado para variáveis categóricas (ex.: níveis de um questionário).
 sexo <- factor(c("M", "F", "M", "F"))
 print(sexo)
 print(class(sexo))
 print(levels(sexo))
 
-# Estrutura bidimensional, mas todos os elementos devem ser do mesmo tipo.
+# Matriz - estrutura bidimensional - todos os elementos devem ser do mesmo tipo.
 matriz <- matrix(1:6, nrow=2, ncol=3)
 print(matriz)
 print(class(matriz))
@@ -61,7 +67,7 @@ arranjo <- array(1:8, dim=c(2,2,2))
 print(arranjo)
 print(class(arranjo))
 
-# Lista: Estrutura heterogênea: pode conter diferentes tipos de dados.
+# Lista - Estrutura heterogênea - pode conter diferentes tipos de dados.
 lista <- list(nome="Carlos", idade=48, notas=c(8,9,10))
 print(lista)
 print(class(lista))
@@ -75,15 +81,17 @@ df <- data.frame(
 print(df)
 print(class(df))
 
-# Classes especiais
+# Tipos especiais
 # R também possui classes específicas derivadas dos tipos básicos:
 
-# Date: para datas.
+# Date - para datas.
 data <- as.Date("2025-09-02")
+print(data)
 print(class(data))
 
-# POSIXct / POSIXlt: para data e hora.
+# POSIXct / POSIXlt - para data e hora.
 data_hora <- as.POSIXct("2025-09-02 13:45:00")
+print(data_hora)
 print(class(data_hora))
 
 
