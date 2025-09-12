@@ -1,4 +1,4 @@
-# Criação de string e funções de manipulação.
+# CRIAÇÃO DE STRINGS E FUNÇÕES DE MANIPULAÇÃO.
 
 # Criação de string em R.
 texto <- "Introdução à Linguagem R"
